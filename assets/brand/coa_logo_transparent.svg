@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Campaigns on Automatic mark">
+  <!-- Gear ring: the shared "on Automatic" cog, brass like the family mark -->
+  <g stroke="#ffd800" fill="none">
+    <circle cx="32" cy="32" r="23.5" stroke-width="4.6"/>
+    <g stroke-width="6.4">
+      <line x1="32" y1="8.5" x2="32" y2="2.5"/>
+      <line x1="32" y1="55.5" x2="32" y2="61.5"/>
+      <line x1="8.5" y1="32" x2="2.5" y2="32"/>
+      <line x1="55.5" y1="32" x2="61.5" y2="32"/>
+      <line x1="15.38" y1="15.38" x2="11.14" y2="11.14"/>
+      <line x1="48.62" y1="48.62" x2="52.86" y2="52.86"/>
+      <line x1="15.38" y1="48.62" x2="11.14" y2="52.86"/>
+      <line x1="48.62" y1="15.38" x2="52.86" y2="11.14"/>
+    </g>
+  </g>
+  <!-- Open campaign ledger where DOA's mark holds a door and HOA's a hex -->
+  <g stroke-linejoin="round">
+    <polygon points="32,23.5 18.5,21 18.5,41.5 32,45.5" fill="#d3e2f2" stroke="#3f6ca6" stroke-width="2.6"/>
+    <polygon points="32,23.5 45.5,21 45.5,41.5 32,45.5" fill="#a9c6e4" stroke="#3f6ca6" stroke-width="2.6"/>
+    <line x1="32" y1="23.5" x2="32" y2="45.5" stroke="#3f6ca6" stroke-width="2.2"/>
+    <!-- Brass ribbon marker -->
+    <polygon points="38,22.4 41.4,21.8 41.4,29.5 39.7,27.8 38,29.5" fill="#e8be1a" stroke="none"/>
+  </g>
+</svg>

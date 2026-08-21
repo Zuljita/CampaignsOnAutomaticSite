@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campaigns on Automatic release status. Desktop builds for Windows, macOS and Linux publish here when the first one ships.">
+  <title>Campaigns on Automatic — Releases</title>
+  <link rel="canonical" href="https://campaignsonautomatic.com/releases.html">
+  <meta property="og:site_name" content="Campaigns on Automatic">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Campaigns on Automatic — Releases">
+  <meta property="og:description" content="Release status and, once they ship, downloads for the Campaigns on Automatic desktop builds.">
+  <meta property="og:url" content="https://campaignsonautomatic.com/releases.html">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--surface-app); color: var(--text-body); font-family: var(--font-body); }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1040px, 92vw); margin: 0 auto; }
+    header { padding: clamp(48px, 8vw, 90px) 0 40px; border-bottom: 1px solid var(--stone-800); background: radial-gradient(60% 50% at 20% 0%, rgba(63,108,166,0.17), transparent 70%); }
+    .eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 12px; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--brass-300); }
+    h1, h2, h3 { font-family: var(--font-display); color: var(--text-strong); text-transform: uppercase; }
+    h1 { max-width: 820px; margin: 14px 0 0; font-size: clamp(42px, 6vw, 72px); line-height: 1.03; letter-spacing: 0.03em; }
+    .lead { max-width: 68ch; margin: 20px 0 0; color: var(--text-muted); font-size: 18px; line-height: 1.65; }
+    main { display: grid; gap: 24px; padding: 42px 0 88px; }
+    .release { display: grid; grid-template-columns: 170px 1fr; gap: 28px; background: var(--surface-panel); border: 1px solid var(--border-hairline); border-radius: var(--radius-lg); padding: clamp(22px, 4vw, 34px); box-shadow: var(--shadow-sm), var(--glint-top); }
+    .version { font-family: var(--font-mono); color: var(--brass-300); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .date { margin-top: 8px; color: var(--text-faint); font-size: 13px; }
+    h2 { margin: 0; font-size: clamp(24px, 3vw, 34px); letter-spacing: 0.04em; }
+    h3 { margin: 26px 0 0; font-size: 18px; letter-spacing: 0.03em; }
+    p, li { color: var(--text-muted); line-height: 1.65; font-size: 15.5px; }
+    ul { margin: 16px 0 0; padding-left: 22px; }
+    a:not(.download) { color: var(--brass-300); }
+    .downloads { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
+    .download { display: block; min-height: 120px; padding: 18px; border: 1px solid var(--border-hairline); border-radius: var(--radius-sm); background: var(--surface-sunken); color: inherit; }
+    .download[href]:hover { border-color: var(--lapis-400); }
+    .download:not([href]) { opacity: 0.72; cursor: default; }
+    .download strong { display: block; font-family: var(--font-display); color: var(--text-strong); text-transform: uppercase; letter-spacing: 0.03em; }
+    .download span { display: block; margin-top: 8px; color: var(--text-muted); font-size: 14px; line-height: 1.5; }
+    .download .download-meta { color: var(--brass-300); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.02em; }
+    code { font-family: var(--font-mono); font-size: 0.92em; color: var(--brass-300); }
+    strong { color: var(--text-strong); }
+    @media (max-width: 760px) {
+      .release { grid-template-columns: 1fr; }
+      .downloads { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <div class="site-family" aria-label="On Automatic family">
+    <div class="site-wrap site-family__inner">
+      <a class="site-family__brand" href="https://dungeonsonautomatic.com/family.html">On Automatic</a>
+      <div class="site-family__links"><a href="https://dungeonsonautomatic.com/">Dungeons</a><a href="https://hexesonautomatic.com/">Hexes</a><a href="https://dungeonsonautomatic.com/characters.html">Characters</a><a href="index.html" aria-current="page">Campaign Vault</a><a href="https://dungeonsonautomatic.com/monsters.html">Monster Library</a></div>
+    </div>
+  </div>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-wrap site-nav__inner">
+      <a class="site-brand" href="index.html"><img src="assets/brand/coa_logo_transparent.svg" alt=""><span>Campaigns on Automatic</span></a>
+      <div class="site-nav__links"><a href="index.html">Home</a><a href="tour.html">The Views</a><a href="vault.html">The Vault</a><a href="releases.html" aria-current="page">Releases</a></div>
+      <a class="site-button site-button--primary" href="#downloads">Downloads</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrap">
+      <span class="eyebrow">Release status</span>
+      <h1>Release notes from the map room.</h1>
+      <p class="lead">Campaigns on Automatic ships the same way as its siblings: continuous early-access desktop builds, mirrored as a public release. The first one has not published yet &mdash; this page is where it lands.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <article class="release" id="downloads">
+      <aside>
+        <div class="version">Downloads</div>
+        <div class="date">Public files</div>
+      </aside>
+      <div>
+        <h2>Continuous early access builds</h2>
+        <p>Desktop builds for Windows, macOS and Linux will be mirrored as the <code>campaigns-continuous</code> public release, exactly like <a href="https://dungeonsonautomatic.com/releases.html">Dungeons</a> and <a href="https://hexesonautomatic.com/releases.html">Hexes</a>. The cards below light up on their own the moment the first build publishes &mdash; no announcement required.</p>
+        <div class="downloads">
+          <a class="download" data-download-id="windows-x64"><strong>Windows installer</strong><span>Windows x64 setup build.</span><span class="download-meta">First public build not published yet.</span></a>
+          <a class="download" data-download-id="mac-arm64"><strong>macOS Apple silicon</strong><span>ZIP build for M-series Macs.</span><span class="download-meta">First public build not published yet.</span></a>
+          <a class="download" data-download-id="mac-x64"><strong>macOS Intel</strong><span>ZIP build for Intel Macs.</span><span class="download-meta">First public build not published yet.</span></a>
+          <a class="download" data-download-id="linux-x86_64"><strong>Linux x86_64</strong><span>AppImage build for 64-bit Linux.</span><span class="download-meta">First public build not published yet.</span></a>
+          <a class="download" data-download-id="linux-arm64"><strong>Linux ARM64</strong><span>AppImage build for ARM64 Linux.</span><span class="download-meta">First public build not published yet.</span></a>
+        </div>
+        <p id="downloads-status">Until then, the app runs from source in the family's development monorepo, and every view on <a href="tour.html">the tour page</a> is a current screenshot.</p>
+      </div>
+    </article>
+    <article class="release" id="status">
+      <aside>
+        <div class="version">Status</div>
+        <div class="date">What exists today</div>
+      </aside>
+      <div>
+        <h2>Where the app stands</h2>
+        <ul>
+          <li><strong>Reading is done first and deepest.</strong> The app opens whole vaults, tolerates incomplete ones, and renders the dashboard, atlas, notes, relationship map, quest and commission boards, search, timeline, health and problems views.</li>
+          <li><strong>The write lanes are deliberately few:</strong> the player-safe <code>player/</code> export, one-click reveals, the campaign clock, faction goal checkmarks, and minting tonight's session note. Every one is a compare-and-swap edit that fails closed.</li>
+          <li><strong>When builds ship they will be unsigned</strong>, like the rest of the family's early access &mdash; expect the once-per-download first-launch challenge from your OS, with the same steps the <a href="https://hexesonautomatic.com/releases.html#known-issues">Hexes releases page</a> documents.</li>
+          <li>Questions and requests go to the <a href="https://github.com/Zuljita/DungeonsOnAutomaticSite/issues">family's public tracker</a> &mdash; say it's Campaigns.</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+  <section class="legal-notice" aria-label="Steve Jackson Games notice">
+    <div class="wrap">
+      <p>Campaigns on Automatic is an original game aid by Kyle Norton for use with <a href="https://www.sjgames.com/gurps/"><b><i>GURPS</i></b></a> and <a href="https://www.sjgames.com/dungeonfantasy/"><b><i>Dungeon Fantasy Roleplaying Game</i></b></a> from <a href="https://www.sjgames.com/">Steve Jackson Games</a>. It is not official and is not endorsed by Steve Jackson Games.</p>
+      <p>GURPS and Dungeon Fantasy Roleplaying Game are trademarks or registered trademarks of Steve Jackson Games. All rights are reserved by Steve Jackson Games. This free, non-resale game aid uses those marks under the <a href="https://www.sjgames.com/general/online_policy.html">SJ Games Online Policy</a>; no SJ Games art, logos, or trade dress are hosted here.</p>
+    </div>
+  </section>
+  <script>
+    // Same card contract as the sibling sites: the committed snapshot renders
+    // first, then the live release (once the campaigns-continuous tag exists)
+    // refreshes URL, size and date. Before the first build both sources are
+    // empty and the cards keep their not-published state.
+    (async () => {
+      const formatBytes = (bytes) => {
+        if (!Number.isFinite(bytes) || bytes <= 0) return null;
+        const units = ['B', 'KB', 'MB', 'GB'];
+        let value = bytes;
+        let unitIndex = 0;
+        while (value >= 1024 && unitIndex < units.length - 1) {
+          value /= 1024;
+          unitIndex += 1;
+        }
+        const precision = unitIndex >= 2 ? 1 : 0;
+        return `${value.toFixed(precision)} ${units[unitIndex]}`;
+      };
+
+      const formatDate = (value) => {
+        if (!value) return null;
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return null;
+        return date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+      };
+
+      const cards = new Map();
+      document.querySelectorAll('[data-download-id]').forEach((card) => {
+        cards.set(card.dataset.downloadId, card);
+      });
+
+      const state = new Map();
+
+      const paint = () => {
+        let published = 0;
+        cards.forEach((card, id) => {
+          const info = state.get(id);
+          const meta = card.querySelector('.download-meta');
+          if (!info || !meta || !info.url) return;
+          const parts = [];
+          if (info.version) parts.push(`Available: v${info.version}`);
+          const date = formatDate(info.releaseDate);
+          if (date) parts.push(date);
+          const size = formatBytes(info.size);
+          if (size) parts.push(size);
+          meta.textContent = parts.length > 0 ? parts.join(' · ') : 'Available.';
+          card.href = info.url;
+          published += 1;
+        });
+        if (published > 0) {
+          const status = document.getElementById('downloads-status');
+          if (status) status.textContent = `${published} of ${cards.size} platform builds are published; the rest follow the next scheduled build.`;
+        }
+      };
+
+      try {
+        const response = await fetch('data/downloads.json', { cache: 'no-store' });
+        if (response.ok) {
+          const metadata = await response.json();
+          (metadata.downloads || []).forEach((download) => {
+            state.set(download.id, {
+              version: download.version,
+              releaseDate: download.releaseDate || metadata.updatedAt || metadata.publishedAt,
+              size: download.size,
+              url: download.url,
+              assetName: download.assetName,
+            });
+          });
+          paint();
+        }
+      } catch (error) { /* snapshot unavailable; cards keep their empty state */ }
+
+      try {
+        const response = await fetch('https://api.github.com/repos/Zuljita/DungeonsOnAutomaticSite/releases/tags/campaigns-continuous');
+        if (!response.ok) return;
+        const release = await response.json();
+        const assets = new Map((release.assets || []).map((asset) => [asset.name, asset]));
+        state.forEach((info) => {
+          const asset = info.assetName ? assets.get(info.assetName) : null;
+          if (!asset) return;
+          info.size = asset.size;
+          info.releaseDate = asset.updated_at || info.releaseDate;
+          info.url = asset.browser_download_url || info.url;
+        });
+        paint();
+      } catch (error) { /* tag absent until the first build; nothing to do */ }
+    })();
+  </script>
+</body>
+</html>

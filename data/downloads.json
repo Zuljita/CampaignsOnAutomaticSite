@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "app": "campaigns",
+  "releaseTag": "campaigns-continuous",
+  "sourceReleaseTag": "campaigns-continuous",
+  "releaseName": "Campaigns on Automatic — continuous build",
+  "notes": "Placeholder until the first public build ships. The mirror workflow overwrites this file with real url/version/size/digest fields; the releases page treats url-less entries as not yet published.",
+  "downloads": [
+    { "id": "windows-x64", "label": "Windows installer", "assetName": "Campaigns-on-Automatic-win-x64-setup.exe", "feedName": "latest.yml" },
+    { "id": "mac-arm64", "label": "macOS Apple silicon", "assetName": "Campaigns-on-Automatic-mac-arm64.zip", "feedName": "latest-mac.yml" },
+    { "id": "mac-x64", "label": "macOS Intel", "assetName": "Campaigns-on-Automatic-mac-x64.zip", "feedName": "latest-mac.yml" },
+    { "id": "linux-x86_64", "label": "Linux x86_64", "assetName": "Campaigns-on-Automatic-linux-x86_64.AppImage", "feedName": "latest-linux.yml" },
+    { "id": "linux-arm64", "label": "Linux ARM64", "assetName": "Campaigns-on-Automatic-linux-arm64.AppImage", "feedName": "latest-linux-arm64.yml" }
+  ]
+}

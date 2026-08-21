@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A tour of the Campaigns on Automatic views with real vaults loaded: dashboard, run view, notes with provenance, the relationship map, quest and commission boards, and the player-safe view.">
+  <title>Campaigns on Automatic — The Views</title>
+  <link rel="canonical" href="https://campaignsonautomatic.com/tour.html">
+  <meta property="og:site_name" content="Campaigns on Automatic">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Campaigns on Automatic — The Views">
+  <meta property="og:description" content="Screenshots of the campaign lens on real vaults: dashboard, run view, notes, relationships, boards, and the player view.">
+  <meta property="og:url" content="https://campaignsonautomatic.com/tour.html">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--surface-app); color: var(--text-body); font-family: var(--font-body); }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, 92vw); margin: 0 auto; }
+    header { padding: clamp(48px, 8vw, 90px) 0 40px; border-bottom: 1px solid var(--stone-800); background: radial-gradient(60% 50% at 20% 0%, rgba(63,108,166,0.17), transparent 70%); }
+    .eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 12px; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--brass-300); }
+    h1, h2, h3 { font-family: var(--font-display); color: var(--text-strong); text-transform: uppercase; }
+    h1 { max-width: 880px; margin: 14px 0 0; font-size: clamp(42px, 6vw, 72px); line-height: 1.03; letter-spacing: 0.03em; }
+    .lead { max-width: 70ch; margin: 20px 0 0; color: var(--text-muted); font-size: 18px; line-height: 1.65; }
+    main { display: grid; gap: 24px; padding: 42px 0 88px; }
+    section { background: var(--surface-panel); border: 1px solid var(--border-hairline); border-radius: var(--radius-lg); padding: clamp(22px, 4vw, 34px); box-shadow: var(--shadow-sm), var(--glint-top); }
+    h2 { margin: 0; font-size: clamp(24px, 3vw, 34px); letter-spacing: 0.04em; }
+    p, li { color: var(--text-muted); line-height: 1.65; font-size: 15.5px; }
+    .section-lede { max-width: 70ch; margin: 12px 0 0; }
+    figure { margin: 22px 0 0; }
+    figure img { display: block; width: 100%; border: 1px solid var(--stone-600); border-radius: var(--radius-sm); background: var(--surface-sunken); box-shadow: var(--shadow-md); }
+    figure.narrow img { max-width: 620px; }
+    figcaption { margin-top: 10px; color: var(--text-faint); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.03em; }
+    .inline-link { color: var(--brass-300); text-decoration: underline; text-underline-offset: 2px; }
+    code { font-family: var(--font-mono); font-size: 0.92em; color: var(--brass-300); }
+    strong { color: var(--text-strong); }
+    .colophon { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--border-hairline); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-faint); }
+    .colophon a { color: var(--brass-300); }
+  </style>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <div class="site-family" aria-label="On Automatic family">
+    <div class="site-wrap site-family__inner">
+      <a class="site-family__brand" href="https://dungeonsonautomatic.com/family.html">On Automatic</a>
+      <div class="site-family__links"><a href="https://dungeonsonautomatic.com/">Dungeons</a><a href="https://hexesonautomatic.com/">Hexes</a><a href="https://dungeonsonautomatic.com/characters.html">Characters</a><a href="index.html" aria-current="page">Campaign Vault</a><a href="https://dungeonsonautomatic.com/monsters.html">Monster Library</a></div>
+    </div>
+  </div>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-wrap site-nav__inner">
+      <a class="site-brand" href="index.html"><img src="assets/brand/coa_logo_transparent.svg" alt=""><span>Campaigns on Automatic</span></a>
+      <div class="site-nav__links"><a href="index.html">Home</a><a href="tour.html" aria-current="page">The Views</a><a href="vault.html">The Vault</a><a href="releases.html">Releases</a></div>
+      <a class="site-button site-button--primary" href="releases.html#downloads">Releases</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrap">
+      <span class="eyebrow">The Views</span>
+      <h1>The lens, on real vaults.</h1>
+      <p class="lead">Every screenshot below is the app reading an actual Campaign Vault: the public example vault from the spec repository, and a region exported by Hexes on Automatic. Nothing is mocked up.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section id="run">
+      <h2>The run view</h2>
+      <p class="section-lede">Tonight's screen, dealt from the vault: previously-on from the session log, the region's travel rules, and per-terrain encounter tables with every monster linked. The in-world date sits in the toolbar with a one-click <em>+1 day</em>.</p>
+      <figure>
+        <img src="assets/site/lens-hero.png" alt="The run view for the Silverwick Expanse region: previously-on panel, travel rules table with speed, navigation, survival and forage columns, and encounter tables with linked monsters.">
+        <figcaption>Run view &middot; a region exported by Hexes on Automatic &middot; day 23 of the campaign clock</figcaption>
+      </figure>
+    </section>
+    <section id="dashboard">
+      <h2>The dashboard</h2>
+      <p class="section-lede">The campaign at a glance: the kind census with stub counts, the worklist of what still needs an owner, vault health, regions and sessions &mdash; and the party's position, straight from the campaign note.</p>
+      <figure>
+        <img src="assets/site/tour-dashboard.png" alt="The dashboard for the Greenreach Vale example vault: entity census, worklist, health panel, regions and sessions.">
+        <figcaption>Dashboard &middot; the public example vault (30 notes, 4 of them pure GM material)</figcaption>
+      </figure>
+    </section>
+    <section id="notes">
+      <h2>Notes with receipts</h2>
+      <p class="section-lede">Every note renders with its provenance line &mdash; id, path, generator, spec version &mdash; reference chips, declared relationships, and the generated sections framed and attributed. Your own prose sits outside the fences, visibly yours.</p>
+      <figure class="narrow">
+        <img src="assets/site/tour-note.png" alt="An NPC note: hidden-from-players badge, provenance header, reference chips, declared relationships, GM prose and a framed generated-identity section, backlinks underneath.">
+        <figcaption>An NPC note &middot; &ldquo;hidden from players&rdquo; badge, generated section framed with its generator's name</figcaption>
+      </figure>
+    </section>
+    <section id="relationships">
+      <h2>The relationship map</h2>
+      <p class="section-lede">Factions as rectangles, NPCs as stadiums, declared edges drawn deterministically &mdash; the same layout every time. GM secrets are dashed; directed kinds carry arrows. Click a node to open its note.</p>
+      <figure class="narrow">
+        <img src="assets/site/tour-relationships.png" alt="The relationship map of the example vault: faction rectangles and NPC nodes joined by labeled edges, secret edges dashed.">
+        <figcaption>Relationship map &middot; 17 declared edges, secrets dashed</figcaption>
+      </figure>
+    </section>
+    <section id="boards">
+      <h2>The boards</h2>
+      <p class="section-lede">The commission board lists every work order Hexes left for Dungeons, and every stub still waiting for one. The quest board tracks objectives with done and hidden marks, givers and targets.</p>
+      <figure>
+        <img src="assets/site/tour-commissions.png" alt="The commission board: three open site commissions with the files that carry them, and four settlement stubs with no work order yet.">
+        <figcaption>Commission board &middot; three site work orders from Hexes, four settlement stubs waiting for Towns</figcaption>
+      </figure>
+      <figure class="narrow">
+        <img src="assets/site/tour-quests.png" alt="The quest board: an active quest with objectives, one done, one hidden, and giver and target chips.">
+        <figcaption>Quest board &middot; objectives with done and hidden marks</figcaption>
+      </figure>
+    </section>
+    <section id="player-view">
+      <h2>The player view</h2>
+      <p class="section-lede">One toggle re-renders the whole app through the spec's leak rules. Unrevealed notes vanish from lists and search, GM prose and secret edges disappear, the atlas goes dark past what the table has charted &mdash; and the GM-only views leave the nav entirely.</p>
+      <figure>
+        <img src="assets/site/tour-player-view.png" alt="Player view of the example vault's atlas: the map dark with nothing charted yet, entity counts reduced to what has been revealed, GM views absent from the navigation.">
+        <figcaption>Player view ON &middot; the same vault, showing only what the table has learned</figcaption>
+      </figure>
+      <p>The same rules drive the <code>player/</code> export: one button derives a standalone player vault, byte-identical to what the reference validator would produce, that you can sync or hand to the table.</p>
+      <div class="colophon">
+        <a href="index.html">What the app is</a>
+        <a href="vault.html">The Vault format</a>
+        <a href="releases.html">Releases</a>
+      </div>
+    </section>
+  </main>
+  <section class="legal-notice" aria-label="Steve Jackson Games notice">
+    <div class="wrap">
+      <p>Campaigns on Automatic is an original game aid by Kyle Norton for use with <a href="https://www.sjgames.com/gurps/"><b><i>GURPS</i></b></a> and <a href="https://www.sjgames.com/dungeonfantasy/"><b><i>Dungeon Fantasy Roleplaying Game</i></b></a> from <a href="https://www.sjgames.com/">Steve Jackson Games</a>. It is not official and is not endorsed by Steve Jackson Games.</p>
+      <p>GURPS and Dungeon Fantasy Roleplaying Game are trademarks or registered trademarks of Steve Jackson Games. All rights are reserved by Steve Jackson Games. This free, non-resale game aid uses those marks under the <a href="https://www.sjgames.com/general/online_policy.html">SJ Games Online Policy</a>; no SJ Games art, logos, or trade dress are hosted here.</p>
+    </div>
+  </section>
+</body>
+</html>

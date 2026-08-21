@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A local-first desktop app that opens a Campaign Vault — the markdown world Dungeons and Hexes on Automatic write into — and shows the whole campaign: atlas, cast, factions, quests, commissions and session tools, with a player-safe view one toggle away.">
+  <title>Campaigns on Automatic — Campaign Vault Browser for DFRPG &amp; GURPS</title>
+  <link rel="canonical" href="https://campaignsonautomatic.com/">
+  <meta property="og:site_name" content="Campaigns on Automatic">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Campaigns on Automatic — Campaign Vault Browser for DFRPG &amp; GURPS">
+  <meta property="og:description" content="Open the vault. Run the table. The campaign lens of the On Automatic family reads the whole vault — atlas, cast, factions, quests, commissions, session tools — and cannot break it.">
+  <meta property="og:url" content="https://campaignsonautomatic.com/">
+  <meta property="og:image" content="https://campaignsonautomatic.com/assets/site/lens-hero.png">
+  <meta property="og:image:width" content="1240">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:alt" content="The Campaigns on Automatic run view: travel rules, encounter tables and weather for a region, dealt from the vault.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <div class="site-family" aria-label="On Automatic family">
+    <div class="site-wrap site-family__inner">
+      <a class="site-family__brand" href="https://dungeonsonautomatic.com/family.html">On Automatic</a>
+      <div class="site-family__links"><a href="https://dungeonsonautomatic.com/">Dungeons</a><a href="https://hexesonautomatic.com/">Hexes</a><a href="https://dungeonsonautomatic.com/characters.html">Characters</a><a href="index.html" aria-current="page">Campaign Vault</a><a href="https://dungeonsonautomatic.com/monsters.html">Monster Library</a></div>
+    </div>
+  </div>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-wrap site-nav__inner">
+      <a class="site-brand" href="#top" aria-label="Campaigns on Automatic home">
+        <img src="assets/brand/coa_logo_transparent.svg" alt="">
+        <span>Campaigns on Automatic</span>
+      </a>
+      <div class="site-nav__links">
+        <a href="#workflow">How it works</a>
+        <a href="tour.html">The Views</a>
+        <a href="vault.html">The Vault</a>
+        <a href="releases.html">Releases</a>
+      </div>
+      <a class="site-button site-button--primary" href="tour.html">See the Views</a>
+    </div>
+  </nav>
+
+  <header class="site-hero" id="top">
+    <div class="site-wrap site-hero__grid">
+      <div class="site-hero__copy">
+        <div class="site-eyebrow">Local-first campaign management for DFRPG &amp; GURPS</div>
+        <h1>Open the vault. <em>Run the table.</em></h1>
+        <p class="site-hero__lede">Your campaign lives in a folder of markdown. This is the lens that reads all of it &mdash; the atlas, the cast, the factions and their secrets, the work orders, the session log &mdash; and deals tonight's screen from what is actually written down.</p>
+        <div class="site-hero__actions">
+          <a class="site-button site-button--primary" href="tour.html">Tour the Views</a>
+          <a class="site-button site-button--quiet" href="releases.html#downloads">Watch for Builds</a>
+        </div>
+        <p class="site-hero__note">In development (0.1.x) &middot; desktop builds for Windows, macOS &amp; Linux land on this site &middot; no account, no cloud &mdash; the vault never leaves your machine</p>
+      </div>
+
+      <div class="product-window" aria-label="Campaigns on Automatic workspace preview">
+        <div class="product-window__bar" aria-hidden="true"><i></i><i></i><i></i><span>CAMPAIGN LENS / THE SILVERWICK MARCHES · DAY 23</span></div>
+        <img src="assets/site/lens-hero.png" alt="The Campaigns on Automatic run view for a region: previously-on panel, travel rules table, and per-terrain encounter tables with linked monsters, dealt from the vault.">
+        <div class="product-window__caption"><strong>Tonight's screen.</strong> Dealt from the vault, live.</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="proof-strip" aria-label="Product highlights">
+    <div class="site-wrap proof-strip__inner">
+      <div class="proof"><b>Read-first</b><span>writes only the derived layers</span></div>
+      <div class="proof"><b>Whole-vault</b><span>atlas, cast, quests, sessions</span></div>
+      <div class="proof"><b>Local-first</b><span>no account, no cloud required</span></div>
+      <div class="proof"><b>Player-safe</b><span>one toggle applies the leak rules</span></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="site-section" id="workflow">
+      <div class="site-wrap">
+        <div class="section-heading">
+          <div>
+            <div class="site-eyebrow">How it works</div>
+            <h2>The generators write. This is where you read.</h2>
+          </div>
+          <p>Dungeons keys the sites, Hexes lays out the regions, and everything lands in one folder. Campaigns is the GM's screen over that folder &mdash; live, cross-referenced, and honest about what it doesn't know.</p>
+        </div>
+
+        <div class="workflow">
+          <article class="workflow__step">
+            <div class="workflow__number">01 / OPEN</div>
+            <h3>Point it at the folder</h3>
+            <p>Pick a Campaign Vault on disk. The lens watches it and reloads live, so it keeps up while apps export and you edit in Obsidian next door.</p>
+          </article>
+          <article class="workflow__step">
+            <div class="workflow__number">02 / BROWSE</div>
+            <h3>Read the whole campaign</h3>
+            <p>Dashboard, region atlas, entity tables, and every note with its provenance, references, generated fences and backlinks laid bare.</p>
+          </article>
+          <article class="workflow__step">
+            <div class="workflow__number">03 / RUN</div>
+            <h3>Deal tonight's screen</h3>
+            <p>Previously-on, the cast as chips, encounter and weather tables, monster statblocks, the quest board, and a campaign clock you advance with one click.</p>
+          </article>
+          <article class="workflow__step">
+            <div class="workflow__number">04 / SHARE</div>
+            <h3>Reveal and dispatch</h3>
+            <p>Reveal chips control what the table knows; one button derives a player-safe vault. The commission board hands stub sites to Dungeons as work orders.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hybrid" id="write-policy" aria-labelledby="write-policy-title">
+      <div class="site-wrap hybrid__inner">
+        <div>
+          <div class="site-eyebrow">Read-first, by construction</div>
+          <h2 id="write-policy-title">A lens that cannot break the campaign.</h2>
+          <p class="hybrid__lede">The desktop shell shipped without a general write channel &mdash; there is no code path that could overwrite your prose. What writing exists is confined to <strong>two sanctioned lanes with the file's own state as a guard,</strong> so a surprise edit from another app or your editor means no write, never a clobber.</p>
+        </div>
+
+        <div class="hybrid__machine" aria-label="What the app may and may not write">
+          <div class="hybrid__machine-head"><span>Write policy</span><span>Enforced in the main process</span></div>
+          <div class="hybrid__flow">
+            <div class="hybrid__step"><b>01 / Reads</b><p><strong>Everything, tolerantly.</strong> Incomplete vaults are fine; dangling references, duplicate ids and stale indexes are surfaced in their own table instead of thrown.</p></div>
+            <div class="hybrid__step"><b>02 / May write</b><p><strong>Only what the spec marks derived or sanctioned:</strong> the player-safe export, reveal states, the campaign clock, faction goal checkboxes, tonight's session-note skeleton.</p></div>
+            <div class="hybrid__step"><b>03 / Compare-and-swap</b><p><strong>Every edit is frontmatter surgery,</strong> applied only if the file still reads exactly as it did. Ambiguity fails closed.</p></div>
+            <div class="hybrid__step"><b>04 / Never touches</b><p><strong>Your prose, other apps' managed regions,</strong> foreign files in the player tree, or anything outside the folder you picked.</p></div>
+          </div>
+          <div class="hybrid__result"><span>vault opened &rarr; read model &rarr; sanctioned lane &rarr; compare-and-swap write</span><strong>Result: the campaign stays yours</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section site-section--sunken" id="views">
+      <div class="site-wrap">
+        <div class="section-heading">
+          <div>
+            <div class="site-eyebrow">What the lens shows</div>
+            <h2>Everything markdown can't render on its own.</h2>
+          </div>
+          <p>Obsidian stays your editor. This app earns its place with the pictures a text file can't draw: the map painted from frontmatter, the graph with its secrets dashed, the boards and dashboards across the whole cast.</p>
+        </div>
+
+        <div class="artifact-grid">
+          <article class="artifact artifact--wide artifact--brass">
+            <div class="artifact__label">The run view</div>
+            <h3>Tonight's screen, dealt from the vault</h3>
+            <p>Previously-on from the session log, the cast as chips, the region's travel rules, encounter tables with monster statblocks at hand, weather by climate band, and the in-world date one click from advancing.</p>
+            <div class="artifact__tags"><span>previously-on</span><span>cast</span><span>encounters</span><span>weather</span><span>statblocks</span><span>clock</span></div>
+          </article>
+          <article class="artifact artifact--lapis">
+            <div class="artifact__label">The atlas</div>
+            <h3>Regions drawn from frontmatter</h3>
+            <p>Every region renders as its hex map &mdash; same grid math and terrain palette as Hexes &mdash; with settlement and site glyphs, a pennant on the party's hex, and click-through to the notes.</p>
+          </article>
+          <article class="artifact">
+            <div class="artifact__label">Notes with receipts</div>
+            <h3>Every claim carries its source</h3>
+            <p>Provenance headers, reference chips with dangling ones flagged, generated prose framed with its generator's name, your own words outside the fences, and backlinks underneath.</p>
+          </article>
+          <article class="artifact">
+            <div class="artifact__label">Relationships &amp; quests</div>
+            <h3>Who owes whom, and what's open</h3>
+            <p>The faction and NPC graph draws declared edges with GM secrets dashed and directed kinds arrowed; the quest board tracks objectives, givers and dangling threads.</p>
+          </article>
+          <article class="artifact">
+            <div class="artifact__label">The boards</div>
+            <h3>Prep debt, made visible</h3>
+            <p>The commission board lists every work order and every stub still waiting for one. Health counts unused cast, orphans and stale indexes; Problems names what's inconsistent. Counts, not nags. <a href="tour.html">See the views with a real vault loaded.</a></p>
+            <div class="artifact__tags"><span>commissions</span><span>health</span><span>problems</span><span>search</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section" id="player-view">
+      <div class="site-wrap">
+        <div class="section-heading">
+          <div>
+            <div class="site-eyebrow">The other side of the screen</div>
+            <h2>One toggle shows what the players know.</h2>
+          </div>
+          <p>Reveal chips sit on every note, section and secret edge. The player-view toggle re-renders the whole app through the spec's leak rules &mdash; unrevealed places vanish from search as if nothing were there &mdash; and one button derives a <code style="font-family: var(--font-mono); font-size: 0.9em; color: var(--brass-300);">player/</code> vault you can hand to the table.</p>
+        </div>
+        <div class="site-hero__actions">
+          <a class="site-button site-button--primary" href="tour.html#player-view">See the player view</a>
+          <a class="site-button site-button--quiet" href="vault.html">How the Vault works</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section site-section--sunken" id="structure">
+      <div class="site-wrap control-grid">
+        <div>
+          <div class="site-eyebrow">No lock-in</div>
+          <h2>Yours, structurally.</h2>
+          <p class="control-grid__lede">The vault format is public and the guarantees are architectural, so the campaign outlives any app in the family &mdash; this one included.</p>
+        </div>
+        <div class="control-list">
+          <div class="control-item"><b>One writer</b><p><strong>Each file has one owner.</strong> Notes minted by an app stay that app's; cross-references live in frontmatter, never in app state.</p></div>
+          <div class="control-item"><b>Live reload</b><p><strong>Built for the second monitor.</strong> The lens watches the folder and repaints as apps export and you edit &mdash; Obsidian on one screen, Campaigns on the other.</p></div>
+          <div class="control-item"><b>Ids first</b><p><strong>Renames don't break the world.</strong> Navigation resolves stable ids before paths, exactly as the spec says to.</p></div>
+          <div class="control-item"><b>Plain markdown</b><p><strong>Useful with zero apps installed.</strong> Git, grep, a text editor and Obsidian all work on the same folder, forever.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="staff-band" aria-labelledby="staff-title">
+      <div class="site-wrap staff-band__inner">
+        <div>
+          <div class="site-eyebrow">The family</div>
+          <h2 id="staff-title">Three writers. One reader.</h2>
+        </div>
+        <div class="staff-band__roster staff-band__roster--three">
+          <div class="staff-member">
+            <svg viewBox="0 0 52 52" aria-hidden="true"><path d="M13 40 L13 24 L26 13 L39 24 L39 40 Z" fill="none" stroke="#e4634f" stroke-width="2.6" stroke-linejoin="round"/><rect x="21.5" y="28" width="9" height="12" fill="#e4634f"/></svg>
+            <div><b><a href="https://dungeonsonautomatic.com/">Dungeons</a></b><span>writes the keyed sites</span></div>
+          </div>
+          <div class="staff-member">
+            <svg viewBox="0 0 52 52" aria-hidden="true"><polygon points="38,26 32,36.4 20,36.4 14,26 20,15.6 32,15.6" fill="none" stroke="#3ba669" stroke-width="2.6" stroke-linejoin="round"/><polygon points="18,33 25,23 28.5,27.5 31.5,23.5 34.5,33" fill="#3ba669"/></svg>
+            <div><b><a href="https://hexesonautomatic.com/">Hexes</a></b><span>writes the regions</span></div>
+          </div>
+          <div class="staff-member">
+            <svg viewBox="0 0 52 52" aria-hidden="true"><g fill="none" stroke="#c9772e" stroke-width="2.6" stroke-linejoin="round"><path d="M10 40 L10 30 L18 23 L26 30 L26 40 Z"/><path d="M26 40 L26 27 L34 19 L42 27 L42 40 Z"/></g><rect x="31" y="32" width="6" height="8" fill="#c9772e"/></svg>
+            <div><b><a href="https://townsonautomatic.com/">Towns</a></b><span>writes the settlements &middot; next</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="site-wrap closing">
+        <div>
+          <div class="site-eyebrow">Early access</div>
+          <h2>New lens. Real vaults. Builds on the way.</h2>
+          <p>Campaigns on Automatic is built in the same shop and release pipeline as its siblings, and it already reads every vault they write. The first public desktop builds land on the <a href="releases.html">releases page</a>; the vault format it reads is <a href="https://github.com/Zuljita/CampaignsOnAutomatic">publicly specified</a> today.</p>
+        </div>
+        <div class="closing__actions">
+          <a class="site-button site-button--primary" href="tour.html">Tour the Views</a>
+          <a class="site-button site-button--quiet" href="https://github.com/Zuljita/DungeonsOnAutomaticSite/issues">Ask or report</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="legal-notice" aria-label="Steve Jackson Games notice">
+    <div class="site-wrap wrap">
+      <p>Campaigns on Automatic is an original game aid by Kyle Norton for use with <a href="https://www.sjgames.com/gurps/"><b><i>GURPS</i></b></a> and <a href="https://www.sjgames.com/dungeonfantasy/"><b><i>Dungeon Fantasy Roleplaying Game</i></b></a> from <a href="https://www.sjgames.com/">Steve Jackson Games</a>. It is not official and is not endorsed by Steve Jackson Games.</p>
+      <p>GURPS and Dungeon Fantasy Roleplaying Game are trademarks or registered trademarks of Steve Jackson Games. All rights are reserved by Steve Jackson Games. This free, non-resale game aid uses those marks under the <a href="https://www.sjgames.com/general/online_policy.html">SJ Games Online Policy</a>; no SJ Games art, logos, or trade dress are hosted here.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-wrap site-footer__inner">
+      <a class="site-brand" href="#top"><img src="assets/brand/coa_logo_transparent.svg" alt=""><span>Campaigns on Automatic</span></a>
+      <span>Campaign prep, on schedule.</span>
+      <div class="site-footer__links">
+        <a href="https://dungeonsonautomatic.com/family.html">On Automatic family</a>
+        <a href="https://dungeonsonautomatic.com/">Dungeons</a>
+        <a href="https://hexesonautomatic.com/">Hexes</a>
+        <a href="tour.html">The Views</a>
+        <a href="vault.html">The Vault</a>
+        <a href="releases.html">Releases</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/Zuljita/CampaignsOnAutomatic">Vault spec</a>
+        <a href="https://github.com/Zuljita/DungeonsOnAutomaticSite/issues">Report a bug</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
