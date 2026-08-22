@@ -633,6 +633,11 @@ body > .site-nav + header:not(.site-hero) h1 {
   line-height: 1.65;
 }
 
+.section-heading p a,
+.control-grid__lede a { color: var(--brass-300); text-decoration: underline; text-underline-offset: 2px; }
+
+.control-grid__lede code { font-family: var(--font-mono); font-size: 0.9em; color: var(--brass-300); }
+
 .control-list { border-top: 1px solid var(--stone-700); }
 
 .control-item {

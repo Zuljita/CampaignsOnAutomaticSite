@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Campaign Vault: the open, Obsidian-compatible markdown format under Campaigns on Automatic — what the family's apps write into it, the rules that keep it safe, and the public spec.">
+  <meta name="description" content="The Campaign Vault: the open, Obsidian-shaped markdown format under Campaigns on Automatic — what the family's apps write into it, what it assumes of your editor, the rules that keep it safe, and the public spec.">
   <title>Campaigns on Automatic — The Campaign Vault</title>
   <link rel="canonical" href="https://campaignsonautomatic.com/vault.html">
   <meta property="og:site_name" content="Campaigns on Automatic">
@@ -68,10 +68,11 @@
     <div class="wrap">
       <span class="eyebrow">The Campaign Vault</span>
       <h1>The campaign is a folder. The apps just visit.</h1>
-      <p class="lead">Under this app sits an open format: a plain folder of markdown notes with YAML frontmatter, publicly specified, readable in Obsidian with zero apps installed. Dungeons and Hexes on Automatic write into it; this lens reads all of it; the folder outlives every one of them.</p>
+      <p class="lead">Under this app sits an open format: a plain folder of markdown notes with YAML frontmatter, publicly specified, and shaped so that it is already an Obsidian vault the day you make it. Dungeons and Hexes on Automatic write into it; you edit it in Obsidian; this lens reads all of it; the folder outlives every one of them.</p>
       <div class="actions">
         <a class="action action--primary" href="https://github.com/Zuljita/CampaignsOnAutomatic">Read the spec</a>
         <a class="action" href="#writes">What the apps write</a>
+        <a class="action" href="#obsidian">Shaped for Obsidian</a>
         <a class="action" href="#rules">The rules</a>
       </div>
     </div>
@@ -98,8 +99,28 @@
         <li><strong>Hexes on Automatic</strong> writes regions: the gazetteer, hex notes, settlement, site and faction stubs, travel and encounter aids, and a commission envelope per dungeon site.</li>
         <li><strong>Dungeons on Automatic</strong> answers the commissions with keyed sites.</li>
         <li><strong>Campaigns on Automatic</strong> writes only the derived and sanctioned lanes: the <code>player/</code> tree, reveal states, the campaign clock, faction goal checkmarks, and tonight's session-note skeleton.</li>
-        <li><strong>You</strong> own everything else, in any editor. Obsidian gets wikilinks and graph for free.</li>
+        <li><strong>You</strong> own everything else, in any editor &mdash; and the editor this was built around is <a class="inline-link" href="#obsidian">Obsidian</a>, which gets wikilinks, backlinks and the graph for free.</li>
       </ul>
+    </section>
+    <section id="obsidian">
+      <h2>Shaped for Obsidian</h2>
+      <p class="section-lede">The format does not require an editor, but it was written with one in mind and the design shows. Campaigns on Automatic has no text editor in it and never will, so the assumed setup is <a class="inline-link" href="https://obsidian.md/">Obsidian</a> open on the same folder &mdash; you write there, the lens reads here, both watching the same files.</p>
+      <h3>What the format borrows</h3>
+      <ul>
+        <li><strong>The folder is the vault.</strong> Open your campaign directory in Obsidian and it works: no import, no conversion, no second library. The two apps read the same bytes off the same disk.</li>
+        <li><strong>Wikilinks are the prose link.</strong> Machine-readable cross-references live in <code>oa_refs</code> frontmatter, but the links the generators write into prose are ordinary <code>[[note]]</code> wikilinks, so backlinks, autocomplete and the graph light up with nothing configured.</li>
+        <li><strong>Frontmatter is plain YAML.</strong> Every field the spec defines is an ordinary property Obsidian can display, search and sort on.</li>
+        <li><strong>No plugins.</strong> Nothing in the spec depends on a community plugin, a theme or a paid add-on. If one ever helps, it will be a suggestion and not a dependency.</li>
+      </ul>
+      <h3>What it does not assume</h3>
+      <ul>
+        <li><strong>Obsidian is not part of this family.</strong> It is a separate app by separate people, unaffiliated with and unendorsed by anything here. No On Automatic app ships it, installs it, or checks whether you have it.</li>
+        <li><strong>Nothing breaks without it.</strong> The vault is UTF-8 markdown in ordinary folders. Git, grep, VS Code, Vim and every other editor read and write it just as well; only the graph, backlinks and wikilink autocomplete are Obsidian's to hand you.</li>
+        <li><strong>Sync is yours.</strong> The apps touch only the folder you point them at. How that folder reaches your other machines &mdash; Obsidian Sync, git, a shared drive, nowhere at all &mdash; is outside the spec and outside the app.</li>
+      </ul>
+      <div class="note">
+        <p>Short version: <strong>Campaigns reads, Obsidian writes.</strong> Two windows over one folder is the workflow this app was built for, and the write policy is what makes it safe &mdash; the lens fails closed rather than clobber an edit you made a second ago in the other window.</p>
+      </div>
     </section>
     <section id="rules">
       <h2>The rules that keep it safe</h2>
